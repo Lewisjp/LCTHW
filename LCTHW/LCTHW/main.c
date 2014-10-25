@@ -12,7 +12,10 @@ int main(int argc, const char * argv[])
 {
 
     // insert code here...
-    printf("Hello, World!\n");
+    printf("Hello, World!");
+    puts("  Saying I love Gambit with a puts statement is fun.");
+    printf("Take me on");
+    puts("Take on me");
+    printf("I'll be gone in a day or two...\n");
     return 0;
 }
-
