@@ -10,27 +10,32 @@
  
 */
 
-// import the contents of one file into this source file.
-// h extensions for "header" files
 #include <stdio.h>
-
-
-/*
- argv and argc are how command line arguments are passed to main() in C and C++.
- 
- argc will be the number of strings pointed to by argv. This will (in practice) be 1 plus the number of arguments, as virtually all implementations will prepend the name of the program to the array.
- 
- The variables are named argc (argument count) and argv (argument vector) by convention, but they can be given any valid identifier: int main(int num_args, char** arg_strings) is equally valid.
-
- http://stackoverflow.com/questions/3024197/what-does-int-argc-char-argv-mean
-*/
 
 int main(int argc, char *argv[])
 {
     int distance = 100;
+
+    printf("You are %d miles away.\n",distance);
+
+    float power = 2.345f;
+    double super_power = 56789.432;
     
-    // call the int value with %d
-    printf("You are %d miles away.\n", distance);
+    printf("You have %f levels of powers.\n", power);
+    printf("You have %f awesome super powers.\n", super_power);
     
+    char initial = 'A';
+    // This char array is a string
+    // Unlike OOP, C is based on pointers
+    char first_name[] = "Zed";  // Print out char arrary (String) with %s
+    char last_name[] = "Shaw";
+    
+    printf("I have an initial %c.\n", initial);
+    printf("I have a first name %s.\n", first_name);
+    printf("I have a last name %s.\n", last_name);
+
+    printf("My whole name is %s %c. %s.\n", first_name, initial, last_name);
+
     return 0;
+    
 }
