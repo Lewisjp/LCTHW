@@ -8,14 +8,29 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[])
+int main()
 {
+    
 
-    // insert code here...
-    printf("Hello, World!");
-    puts("  Saying I love Gambit with a puts statement is fun.");
-    printf("Take me on");
-    puts("Take on me");
-    printf("I'll be gone in a day or two...\n");
+    int age = 10;
+    int height = 72;
+
+    printf("I am %d years old.\n", age);
+    printf("I am %d inches tall.\n", height);
+
+    char cat = 'c';
+    float waist = 32.6;
+    
+    printf("The word Cat begins with %c.\n", cat);
+    printf("My waist is %f", waist);
+    
     return 0;
 }
+
+/*
+Reading Material:
+ 
+http://www.codingunit.com/printf-format-specifiers-format-conversions-and-formatted-output
+
+
+*/
